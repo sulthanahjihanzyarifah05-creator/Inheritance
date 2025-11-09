@@ -3,7 +3,7 @@
   dari kelas lain (class induk/superclass). Dengan inheritance, kita bisa menghindari duplikasi kode dan memperluas fungsionalitas dari kelas yang sudah ada.</h5>
 
 <h2>1.1 PACKAGE = LATIHAN 1</h3>
-<h3>1.1.1Class Car.java</h2>
+<h3>1.1.1 Class Car.java</h2>
 <pre><img width="431" height="116" alt="image" src="https://github.com/user-attachments/assets/92c43723-529d-4a22-bdc2-b96fa90ff249" /></pre>
 <h5>Kelas Car merupakan subclass dari Vehicle yang menggunakan konsep inheritance. Kelas ini mewarisi semua atribut dan method dari Vehicle, tetapi melakukan overriding pada method start(). 
   Di dalamnya terdapat perintah System.out.println("Mobil menyla dengan kunci kotak"); yang menunjukkan bahwa cara menyalakan mobil berbeda dari kendaraan lain. Jadi, saat objek Car memanggil 
@@ -23,11 +23,14 @@ Di dalamnya dibuat array vehicles yang berisi dua objek, yaitu Car dan Motorcycl
 program memanggil method start() untuk setiap objek. Karena masing-masing kelas (Car dan Motorcycle) melakukan overriding pada method start(),
 maka output yang muncul menyesuaikan dengan jenis objeknya. Hal ini menunjukkan penerapan polymorphism dalam konsep inheritance.
 
-<h3>Class Main </h3>
+<h3>1.1.4 Class Main </h3>
 <pre><img width="366" height="214" alt="image" src="https://github.com/user-attachments/assets/f3597382-eb18-4595-86da-d63d1a241c03" /></pre>
 <h5>Kelas Main berfungsi sebagai kelas utama untuk menjalankan program. Di dalamnya dibuat array vehicles yang berisi dua objek, yaitu Car dan Motorcycle, yang keduanya merupakan turunan dari Vehicle. 
   Melalui perulangan for, program memanggil method start() untuk setiap objek. Karena masing-masing kelas (Car dan Motorcycle) melakukan overriding pada method start(), maka output yang muncul menyesuaikan dengan jenis objeknya.
   Hal ini menunjukkan penerapan polymorphism dalam konsep inheritance.</h5>
+<h3> OUTPUT Latihan 1 </h3>
+<pre><img width="296" height="74" alt="image" src="https://github.com/user-attachments/assets/7818ac91-03a2-47c2-a68e-12b579bfb806" />
+</pre>
 
 <h2>1.2 PACKAGE LATIHAN 2</h2>
 <h3>1.2.1 Class Account</h3>
@@ -50,6 +53,37 @@ maka output yang muncul menyesuaikan dengan jenis objeknya. Hal ini menunjukkan 
 
 <h3>Class Main</h3>
 <pre><img width="401" height="368" alt="image" src="https://github.com/user-attachments/assets/6258e403-e779-4272-9be9-896d069dcf3c" /></pre>
-<h5>Kelas Main berfungsi sebagai kelas utama untuk menjalankan program. Di dalamnya dibuat array accounts yang berisi objek dari dua jenis akun, yaitu SavingsAccount dan CheckingAccount, yang semuanya merupakan turunan dari kelas Account. Melalui perulangan for,
-  setiap objek akun akan memanggil method displayInfo() sesuai jenisnya — ini menunjukkan penerapan polymorphism karena method yang sama menampilkan hasil berbeda. Selain itu, program memeriksa apakah objek termasuk SavingsAccount menggunakan instanceof. Jika iya, objek tersebut 
-  dikonversi (casting) agar bisa memanggil method khusus addInterest() untuk menambahkan bunga ke saldo. Program ini menggambarkan penerapan inheritance, overriding, dan polymorphism dalam sistem rekening bank sederhana.</h5>
+<h5>Kelas Main berfungsi sebagai kelas utama untuk menjalankan program. Di dalamnya dibuat array accounts yang berisi objek dari dua jenis akun, yaitu SavingsAccount dan CheckingAccount, yang semuanya merupakan turunan dari kelas Account. Melalui perulangan for, setiap objek akun akan memanggil method displayInfo() sesuai jenisnya — ini menunjukkan penerapan polymorphism karena method yang sama menampilkan hasil berbeda. Selain itu, program memeriksa apakah objek termasuk SavingsAccount menggunakan instanceof. Jika iya, objek tersebut dikonversi (casting) agar bisa memanggil method khusus addInterest() untuk menambahkan bunga ke saldo. Program ini menggambarkan penerapan inheritance, overriding, dan polymorphism dalam sistem rekening bank sederhana.</h5>
+
+<h3> OUTPUT Latihan 2</h3>
+<PRE><img width="480" height="191" alt="image" src="https://github.com/user-attachments/assets/fb359bc1-5fac-4ac0-a48f-3bd9c914ef4d" />
+</PRE>
+
+
+
+<h2>1.3 PACKAGE LATIHAN 3</h2>
+
+<h3> 1.3.1 Class Circle </h3>
+<pre><img width="275" height="197" alt="image" src="https://github.com/user-attachments/assets/d5916f3b-56fb-4674-b212-9e124000a5d2" /></pre>
+<h5>Kelas Circle merupakan subclass dari Shape yang merepresentasikan bentuk lingkaran. Kelas ini memiliki atribut radius untuk menyimpan jari-jari lingkaran. Konstruktor digunakan untuk menginisialisasi nilai jari-jari saat objek dibuat. Method area() di-override dari kelas induk Shape untuk menghitung dan mengembalikan luas lingkaran dengan rumus π × r². Kelas ini menunjukkan penerapan inheritance dan method overriding untuk menyesuaikan perhitungan luas sesuai jenis bentuk.</h5>
+
+<h3> 1.3.2 Class  Rectangle </h3>
+<pre><img width="337" height="221" alt="image" src="https://github.com/user-attachments/assets/4c55eec2-01e9-4280-a059-5a052317a09e" /></pre>
+<h5> Kelas Rectangle merupakan subclass dari Shape yang merepresentasikan bentuk persegi panjang. Kelas ini memiliki dua atribut, yaitu width (lebar) dan height (tinggi), yang diinisialisasi melalui konstruktor. Method area() di-override dari kelas induk untuk menghitung luas persegi panjang dengan rumus lebar × tinggi. Kelas ini menunjukkan penerapan inheritance dan method overriding untuk menyesuaikan perhitungan luas sesuai bentuknya.</h5>
+
+<h3>1.3.3 Class Shape</h3>
+<pre><img width="413" height="102" alt="image" src="https://github.com/user-attachments/assets/d548ab02-42fc-4d09-86cb-d55cfef384e8" /></pre>
+<h5>Kelas Shape merupakan kelas abstrak (abstract class) yang menjadi superclass bagi berbagai bentuk geometri. Di dalamnya terdapat satu method abstrak area() yang tidak memiliki isi, sehingga wajib di-override oleh setiap subclass. Kelas ini berfungsi sebagai kerangka dasar untuk bentuk-bentuk lain seperti Circle dan Rectangle, agar masing-masing dapat mendefinisikan cara menghitung luas sesuai karakteristiknya.</h5>
+
+<h3> 1.3.4 Class Triangle</h3>
+<pre><img width="324" height="218" alt="image" src="https://github.com/user-attachments/assets/9103d424-3779-46c7-8a4a-9d3b2d6998b1" /></pre>
+<h5>Kelas Triangle merupakan subclass dari Shape yang merepresentasikan bentuk segitiga. Kelas ini memiliki dua atribut, yaitu base (alas) dan height (tinggi), yang diinisialisasi melalui konstruktor. Method area() di-override dari kelas induk untuk menghitung luas segitiga dengan rumus 0.5 × alas × tinggi. Kelas ini memperlihatkan penerapan inheritance dan method overriding untuk menghitung luas sesuai bentuk geometri yang diwakilinya.</h5>
+
+<h3> 1.3.5 Class Main</h3>
+<pre><img width="484" height="316" alt="image" src="https://github.com/user-attachments/assets/17206b0e-7fab-4962-9b3e-84afad58ca14" /></pre>
+<h5>Kelas Main pada paket Latihan3 berfungsi sebagai kelas utama untuk menjalankan program. Di dalamnya dibuat array shapes yang berisi objek dari tiga kelas turunan Shape, yaitu Triangle, Rectangle, dan Circle. Program kemudian melakukan perulangan untuk memanggil method area() pada setiap objek. Karena setiap subclass memiliki implementasi berbeda, hasil perhitungan luas disesuaikan dengan bentuknya. Nilai luas tiap objek ditampilkan, lalu dijumlahkan menjadi total luas semua bentuk. Program ini menunjukkan penerapan inheritance, abstract class, dan polymorphism dalam perhitungan luas berbagai bentuk geometri.</h5>
+<h3> OUTPUT Latihan 3</h3>
+<pre><img width="331" height="116" alt="image" src="https://github.com/user-attachments/assets/5fa8a31f-363c-4ff6-9a7b-83bcbff14f0b" />
+</pre>
+
+
